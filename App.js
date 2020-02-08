@@ -13,6 +13,7 @@ import { createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from './js/screens/HomeScreen';
 import LoginScreen from './js/screens/LoginScreen';
 import AuthLoadingScreen from './js/screens/AuthLoadingScreen';
+import ProfileScreen from './js/screens/ProfileScreen';
 
 const AuthStack = createStackNavigator({
   Login: LoginScreen,
@@ -20,6 +21,7 @@ const AuthStack = createStackNavigator({
 
 const AppStack = createStackNavigator({
   Home: HomeScreen,
+  Profile: ProfileScreen
 });
 
 const SwitchNavigator = createSwitchNavigator({

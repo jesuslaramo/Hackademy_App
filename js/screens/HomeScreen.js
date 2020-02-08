@@ -17,6 +17,7 @@ export default class HomeScreen extends Component{
         return(
             <View style={styles.view}>
                 <Text>Hola esta es la pantalla principal</Text>
+                <Button title="Ir a perfil" onPress={() => this.props.navigation.navigate('Profile')}></Button>
                 <Button title="Cerrar sesión" onPress={() => this._logout()}></Button>
             </View>
         )

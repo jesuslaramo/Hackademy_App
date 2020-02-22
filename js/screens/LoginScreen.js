@@ -52,6 +52,7 @@ export default class LoginScreen extends Component{
                     <TextInput placeholder="Escribe tu email" autoCapitalize="none" onChangeText={(email) => this.setState({email})} style={styles.input} keyboardType="email-address"></TextInput>
                     <TextInput placeholder="Contraseña" autoCapitalize="none" secureTextEntry={true} onChangeText={(password) => this.setState({password})} style={styles.input}></TextInput>
                     <Button title="Iniciar sesión" onPress={() => this._login()}></Button>
+                    <Text style={styles.register} onPress={() => this.props.navigation.navigate('Register')}>Crear usuario</Text>
                 </View>
                 
             </View>
@@ -77,5 +78,10 @@ const styles = StyleSheet.create({
         marginBottom: 24,
         borderBottomWidth: 1,
         borderBottomColor: '#999999',
+    },
+    register:{
+        marginTop: 30,
+        textAlign: 'center',
+        color: '#0645AD',
     }
 })

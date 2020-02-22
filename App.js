@@ -14,14 +14,20 @@ import HomeScreen from './js/screens/HomeScreen';
 import LoginScreen from './js/screens/LoginScreen';
 import AuthLoadingScreen from './js/screens/AuthLoadingScreen';
 import ProfileScreen from './js/screens/ProfileScreen';
+import UsersListScreen from './js/screens/UsersListScreen';
+import UserScreen from './js/screens/UserScreen';
+import RegisterScreen from './js/screens/RegisterScreen';
 
 const AuthStack = createStackNavigator({
   Login: LoginScreen,
+  Register: RegisterScreen
 });
 
 const AppStack = createStackNavigator({
   Home: HomeScreen,
-  Profile: ProfileScreen
+  Profile: ProfileScreen,
+  Users: UsersListScreen,
+  User: UserScreen,
 });
 
 const SwitchNavigator = createSwitchNavigator({
